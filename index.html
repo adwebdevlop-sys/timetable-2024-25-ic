@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+<meta charset="UTF-8">
+<title>University Timetable</title>
+<style>
+    body {
+        font-family: 'Segoe UI', Arial, sans-serif;
+        background-color: #f4f7f9;
+        margin: 0;
+        padding: 40px;
+        color: #1f2937;
+    }
+    .timetable-container {
+        max-width: 1100px;
+        margin: 0 auto;
+        background: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        padding: 30px;
+        border-top: 6px solid #1e3a8a;
+    }
+    .header {
+        text-align: center;
+        margin-bottom: 25px;
+        border-bottom: 2px solid #e5e7eb;
+        padding-bottom: 15px;
+    }
+    .header h1 {
+        font-size: 22px;
+        color: #1e3a8a;
+        margin: 0 0 5px 0;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+    .header h2 {
+        font-size: 18px;
+        color: #1f2937;
+        margin: 0 0 5px 0;
+        font-weight: 600;
+    }
+    .header h3 {
+        font-size: 14px;
+        color: #4b5563;
+        margin: 0 0 5px 0;
+        font-weight: 500;
+    }
+    .header .tag {
+        display: inline-block;
+        font-size: 12px;
+        color: #1e3a8a;
+        background-color: #e0e7ff;
+        padding: 3px 10px;
+        border-radius: 12px;
+        font-weight: 600;
+        margin-top: 5px;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+        table-layout: fixed;
+    }
+    th {
+        background-color: #1e3a8a;
+        color: #ffffff;
+        padding: 12px 8px;
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        border: 1px solid #1e3a8a;
+    }
+    td {
+        border: 1px solid #e5e7eb;
+        padding: 8px;
+        text-align: center;
+        vertical-align: middle;
+        font-size: 13px;
+        height: 48px;
+    }
+    .time-col {
+        background-color: #f8fafc;
+        font-weight: 600;
+        color: #334155;
+        width: 110px;
+    }
+    .lunch-row td {
+        background-color: #f1f5f9;
+        color: #64748b;
+        font-weight: 600;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-size: 12px;
+    }
+    .course-card {
+        background-color: #eff6ff;
+        color: #1e40af;
+        border: 1px solid #bfdbfe;
+        border-radius: 4px;
+        padding: 6px 4px;
+        font-weight: 600;
+        font-size: 13px;
+    }
+</style>
+</head>
+<body>
+
+<div class="timetable-container">
+    <div class="header">
+        <h1>Faculty of Islamic Studies and Arabic Language</h1>
+        <h2>TIME TABLE</h2>
+        <h3>ACADEMIC YEAR - 2024/25, SEM-I (2026)</h3>
+        <div class="tag">Tentative 02.10.2026</div>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th style="width: 12%;">Time</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="time-col">8.30-9.30</td>
+                <td></td>
+                <td></td>
+                <td><div class="course-card">ICM 11013</div></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="time-col">9.30-10.30</td>
+                <td></td>
+                <td></td>
+                <td><div class="course-card">CPM 11463</div></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="time-col">10.30-11.30</td>
+                <td></td>
+                <td></td>
+                <td><div class="course-card">IBM 11013</div></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="time-col">11.30-12.30</td>
+                <td><div class="course-card">IBM 11013</div></td>
+                <td><div class="course-card">ICM 11013</div></td>
+                <td><div class="course-card">IBM 11013</div></td>
+                <td><div class="course-card">MCE 11011</div></td>
+                <td></td>
+            </tr>
+            <tr class="lunch-row">
+                <td class="time-col">12.30-1.30</td>
+                <td colspan="5">Lunch Time</td>
+            </tr>
+            <tr>
+                <td class="time-col">1.30-2.30</td>
+                <td><div class="course-card">ITC 11011 IC</div></td>
+                <td><div class="course-card">ELC 11012 IC</div></td>
+                <td></td>
+                <td><div class="course-card">CPM 11463</div></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="time-col">2.30-3.30</td>
+                <td></td>
+                <td><div class="course-card">ELC 11012 IC</div></td>
+                <td></td>
+                <td></td>
+                <td><div class="course-card">BAC 11012</div></td>
+            </tr>
+            <tr>
+                <td class="time-col">3.30-4.30</td>
+                <td></td>
+                <td><div class="course-card">CPM 11463</div></td>
+                <td></td>
+                <td><div class="course-card">ICM 11013</div></td>
+                <td><div class="course-card">BAC 11012</div></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>
